@@ -1,0 +1,103 @@
+* {
+  font-family: Montserrat, sans-serif;
+}
+ion-content {
+  ion-header {
+      ion-toolbar {
+          --background: transparent;
+      }
+  }
+  .first-action{
+    margin-top: -0.7em;
+    padding: 1em;
+    display: flex;
+    justify-content: start;
+
+    ion-checkbox{
+      margin-top: 0.6em;
+      margin-left: 0.5em;
+    }
+  }
+
+  .second-action{
+    margin-top: -5em;
+    padding: 1em;
+    display: flex;
+    justify-content: end;
+
+    ion-checkbox{
+      margin-top: 0.6em;
+      margin-left: 0.5em;
+    }
+  }
+
+
+  ion-checkbox:nth-child(1){
+    margin-left: 2em;
+  }
+}
+
+ion-footer {
+  ion-list{
+    border-radius: 20px 20px 0 0 !important;
+  }
+  ion-card{
+    margin: 0 !important;
+    padding-top: 0 !important;
+    padding: 0.5em;
+    border-radius: 8px;
+    img{
+      border-radius: 8px;
+    }
+    .toggle-element{
+      display: flex;
+      justify-content: space-between;
+
+      h6{
+        font-weight: bold;
+        font-size: 11px;
+        margin-top: 1.3em;
+      }
+
+      ion-toggle{
+        margin-top: -0.7m;
+      }
+    }
+  }
+
+  .head-card{
+    border-radius: 0 !important;
+
+    .input-card{
+      border-radius: 8px;
+      padding: 0.5em;
+      display: flex;
+      justify-content: space-around;
+
+      input{
+        margin-top: 0.3em;
+        border-radius: 10px;
+        height: 5px;
+        width: 170px;
+        border: 1px solid gray;
+        padding: 1em;
+        text-align: center;
+      }
+    }
+  }
+
+  .montant{
+    display: flex;
+    justify-content: space-around;
+
+    ion-button{
+      margin-top: 1em;
+      --background: rgb(255, 174, 0);
+    }
+
+    h6{
+      font-weight: bold;
+      color: gray;
+    }
+  }
+}
