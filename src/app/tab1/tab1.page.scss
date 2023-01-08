@@ -2,13 +2,14 @@
   font-family: Montserrat, sans-serif;
 }
 ion-content {
+  overflow-y: hidden !important;
   ion-header {
       ion-toolbar {
           --background: transparent;
       }
   }
   .first-action{
-    margin-top: -0.7em;
+    margin-top: -0.6em;
     padding: 1em;
     display: flex;
     justify-content: start;
@@ -17,6 +18,11 @@ ion-content {
       margin-top: 0.6em;
       margin-left: 0.5em;
     }
+  }
+
+  .toolbar-top{
+    overflow-y: hidden !important;
+    margin-bottom: -2.3em;
   }
 
   .second-action{
@@ -38,14 +44,12 @@ ion-content {
 }
 
 ion-footer {
-  ion-list{
-    border-radius: 20px 20px 0 0 !important;
-  }
   ion-card{
     margin: 0 !important;
     padding-top: 0 !important;
     padding: 0.5em;
     border-radius: 8px;
+    border: 1px solid #1c2241;
     img{
       border-radius: 8px;
     }
@@ -57,6 +61,7 @@ ion-footer {
         font-weight: bold;
         font-size: 11px;
         margin-top: 1.3em;
+        color: #1c2241;
       }
 
       ion-toggle{
@@ -66,6 +71,7 @@ ion-footer {
   }
 
   .head-card{
+    border: 1px solid #fff;
     border-radius: 0 !important;
 
     .input-card{
@@ -73,6 +79,21 @@ ion-footer {
       padding: 0.5em;
       display: flex;
       justify-content: space-around;
+
+      .first-icon-location{
+        position: absolute;
+        z-index:1;
+        left: 30px;top: 18px;
+        color: gray;
+      }
+
+      .second-icon-location{
+        position: absolute;
+        z-index:1;
+        margin-left: 3.7em;
+        top: 18px;
+        color: gray;
+      }
 
       input{
         margin-top: 0.3em;
@@ -83,6 +104,9 @@ ion-footer {
         padding: 1em;
         text-align: center;
       }
+      input:focus{
+        outline: none;
+      }
     }
   }
 
@@ -91,13 +115,13 @@ ion-footer {
     justify-content: space-around;
 
     ion-button{
-      margin-top: 1em;
-      --background: rgb(255, 174, 0);
+      margin-top: 0.8em;
+      --background: #1c2241;
     }
 
     h6{
+      color: #1c2241;
       font-weight: bold;
-      color: gray;
     }
   }
 }

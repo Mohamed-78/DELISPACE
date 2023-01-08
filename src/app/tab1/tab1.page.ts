@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { MapComponent } from '../map/map.component';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +9,14 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor(public modalCtrl: ModalController) {}
+
+  async openMap() {
+    const modal = await this.modalCtrl.create({
+      component: MapComponent,
+      cssClass: 'transparent-modal',
+    });
+    modal.present();
+  }
 
 }

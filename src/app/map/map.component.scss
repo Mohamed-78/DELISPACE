@@ -1,0 +1,54 @@
+ion-header{
+  .first-icon-location{
+    position: absolute;
+    z-index:1;
+    right: 30px;
+    top: 18px;
+    color: #1c2241;
+  }
+  ion-card{
+    margin-top: 2em;
+    border-radius: 8px;
+  }
+  .close-modal-icon{
+    font-size: 30px;
+    position: absolute;
+    z-index: 1;
+    right: 6em;
+    color: #1c2241;
+    top: 5px;
+  }
+}
+
+ion-content{
+  hr{
+    margin-top: 0.5em;
+    width: 85%;
+    margin-left: 1.4em;
+    background: #e2e2e2;
+  }
+  .map-list{
+    h6{
+      color: #1c2241;
+      font-weight: bold;
+    }
+    span{
+      font-size: 12px;
+      color: gray;
+    }
+    .map-sub-list{
+      margin-top: -0.5em;
+      margin-bottom: 0.3em;
+    }
+  }
+  .map-kilometor{
+    position: fixed;
+    left: 20em;
+    margin-top: 2em;
+
+    span{
+      color: #1c2241 !important;
+      font-size: 12px;
+    }
+  }
+}
