@@ -2,6 +2,7 @@
   font-family: Montserrat, sans-serif;
 }
 ion-content {
+  --background:#fff;
   overflow-y: hidden !important;
   ion-header {
       ion-toolbar {
@@ -44,6 +45,7 @@ ion-content {
 }
 
 ion-footer {
+  --background:#fff;
   ion-card{
     margin: 0 !important;
     padding-top: 0 !important;
