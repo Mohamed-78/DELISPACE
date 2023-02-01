@@ -5,6 +5,22 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'changer-mot-de-passe',
+    loadChildren: () => import('./changer-mot-de-passe/changer-mot-de-passe.module').then( m => m.ChangerMotDePassePageModule)
+  },
+  {
+    path: 'contrat',
+    loadChildren: () => import('./contrat/contrat.module').then( m => m.ContratPageModule)
+  },
+  {
+    path: 'informations',
+    loadChildren: () => import('./informations/informations.module').then( m => m.InformationsPageModule)
+  },
+  {
+    path: 'cgu',
+    loadChildren: () => import('./cgu/cgu.module').then( m => m.CguPageModule)
   }
 ];
 @NgModule({

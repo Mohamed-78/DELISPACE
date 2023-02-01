@@ -9,6 +9,7 @@ import { MapComponent } from '../map/map.component';
 })
 export class Tab1Page {
 
+  public toggled: boolean = false;
   constructor(public modalCtrl: ModalController) {}
 
   async openMap() {
@@ -17,6 +18,10 @@ export class Tab1Page {
       cssClass: 'transparent-modal',
     });
     modal.present();
+  }
+
+  public toggle(): void {
+    this.toggled = !this.toggled;
   }
 
 }

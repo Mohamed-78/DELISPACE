@@ -4,11 +4,11 @@
       <div class="toolbar-top">
         <div class="first-action">
           <h6>Livraison</h6>
-          <ion-checkbox mode="ios" slot="start" checked=""></ion-checkbox>
+          <ion-checkbox mode="ios" slot="start"></ion-checkbox>
         </div>
         <div class="second-action">
           <h6>Démenagement</h6>
-          <ion-checkbox mode="ios" slot="end"></ion-checkbox>
+          <ion-checkbox mode="ios" slot="end" (click)="toggle()"></ion-checkbox>
         </div>
       </div>
     </ion-toolbar>
@@ -19,13 +19,13 @@
 <ion-footer class="ion-no-border">
   <ion-grid>
     <ion-row>
-      <ion-col size="6">
+      <ion-col size="6" *ngIf="toggled">
         <ion-card>
           <div class="toggle-element">
-            <h6>MOTO TRICYLE</h6>
+            <h6>CAMION</h6>
             <ion-toggle slot="end" [enableOnOffLabels]="true"></ion-toggle>
           </div>
-          <img src="../../assets/images/tricyle.jpeg" alt="TRICYLE">
+          <img src="../../assets/images/camion.jpg" alt="TRICYLE">
         </ion-card>
       </ion-col>
       <ion-col size="6">
@@ -38,6 +38,15 @@
         </ion-card>
       </ion-col>
       <ion-col size="6">
+        <ion-card>
+          <div class="toggle-element">
+            <h6>MOTO TRICYLE</h6>
+            <ion-toggle slot="end" [enableOnOffLabels]="true"></ion-toggle>
+          </div>
+          <img src="../../assets/images/tricyle.jpeg" alt="TRICYLE">
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" *ngIf="!toggled">
         <ion-card>
           <div class="toggle-element">
             <h6>MOTO KTM</h6>
@@ -55,8 +64,8 @@
           <img src="../../assets/images/bachet4.jpg" alt="BACHET">
         </ion-card>
       </ion-col>
-    </ion-row>
-  </ion-grid>
+  </ion-row>
+</ion-grid>
 <ion-card class="head-card" mode="ios">
   <div class="input-card">
     <input type="text" placeholder="Adresse de depart" (click)="openMap()">

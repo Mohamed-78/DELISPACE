@@ -1,0 +1,36 @@
+*{
+  font-family: Montserrat, sans-serif;
+}
+
+ion-header{
+  ion-toolbar{
+    --background:#1c2241;
+    height: 3.5em;
+  }
+  .notification-position{
+    display: flex;
+    justify-content: space-around;
+
+    ion-title{
+      margin-top: -0.7em;
+      color: #fff;
+    }
+
+    ion-back-button{
+      margin-top: -0.7em;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+}
+
+ion-content {
+  --background:#fff;
+  .p2{
+    padding: 1em;
+  }
+  p{
+    text-align: justify;
+    word-break: break-all;
+  }
+}

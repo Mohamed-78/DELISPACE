@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button class="backbtn" routerLink="/tabs/tab2" routerDirection="back">
+        <img src="../../assets/back.svg" />
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="ion-padding container">
+    <h1><b>Reinitialisation</b></h1>
+    <span>Saisissez un nouveau mot de passe</span>
+    <div class="form-container">
+      <ion-item>
+        <ion-label position="floating">Nouveau mot de passe</ion-label>
+        <ion-input placeholder="**************" type="passe"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Confirmer le mot de passe</ion-label>
+        <ion-input placeholder="**************" type="passe"></ion-input>
+      </ion-item>
+      <ion-button class="main-button" [routerLink]="['/changer-mot-de-passe']">Enregistrer</ion-button>
+    </div>
+  </div>
+</ion-content>

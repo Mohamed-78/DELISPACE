@@ -22,7 +22,7 @@
   </div>
   <h6 class="me"><b>ME CONCERNANT</b></h6>
   <div class="ion-padding">
-    <div>
+    <div [routerLink]="['/informations']">
       <div class="menu_positions">
         <ion-icon name="person-outline"></ion-icon>&nbsp;&nbsp;
         <h5>Informations</h5>
@@ -31,7 +31,7 @@
         <ion-icon name="chevron-forward-outline"></ion-icon>
       </div>
     </div>
-    <div>
+    <div [routerLink]="['/contrat']">
       <div class="menu_positions">
         <ion-icon name="documents-outline"></ion-icon>&nbsp;&nbsp;
         <h5>Contrat d'exercice</h5>
@@ -59,7 +59,7 @@
       <ion-icon name="share-social-outline"></ion-icon>&nbsp;&nbsp;
       <h5>Partager cette application</h5>
     </div>
-    <div class="menu_positions" [routerLink]="['/conditions-generales']">
+    <div class="menu_positions" [routerLink]="['/cgu']">
       <ion-icon name="document-text-outline"></ion-icon>&nbsp;&nbsp;
       <h5>Conditions générales d'utilisation</h5>
     </div>
