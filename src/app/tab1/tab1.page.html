@@ -1,22 +1,14 @@
-<ion-content [fullscreen]="true">
-  <ion-header class="ion-no-border">
-    <ion-toolbar>
-      <div class="toolbar-top">
-        <div class="first-action">
-          <h6>Livraison</h6>
-          <ion-checkbox mode="ios" slot="start"></ion-checkbox>
-        </div>
-        <div class="second-action">
-          <h6>Démenagement</h6>
-          <ion-checkbox mode="ios" slot="end" (click)="toggle()"></ion-checkbox>
-        </div>
-      </div>
-    </ion-toolbar>
-  </ion-header>
-
-</ion-content>
-
 <ion-footer class="ion-no-border">
+  <div class="toolbar-top">
+    <div class="first-action">
+      <h6>Livraison</h6>
+      <ion-checkbox mode="ios" slot="start"></ion-checkbox>
+    </div>
+    <div class="second-action">
+      <h6>Démenagement</h6>
+      <ion-checkbox mode="ios" slot="end" (click)="toggle()"></ion-checkbox>
+    </div>
+  </div>
   <ion-grid>
     <ion-row>
       <ion-col size="6" *ngIf="toggled">
@@ -68,14 +60,11 @@
 </ion-grid>
 <ion-card class="head-card" mode="ios">
   <div class="input-card">
-    <input type="text" placeholder="Adresse de depart" (click)="openMap()">
-    <ion-icon name="location" class="first-icon-location"></ion-icon>
-    <input type="text" placeholder="Adresse d'arrivée">
-    <ion-icon name="location" class="second-icon-location"></ion-icon>
+    <input type="text" placeholder="Quelle est votre adresse de depart ?" (click)="openMap()">
+    <img src="../../assets/images/colis-livre.png" class="delevery">
   </div>
-  <div class="montant">
-      <h6>Montant à payer* : 1 000 F</h6>
-      <ion-button size="small" mode="ios" disabled="">Commander <ion-icon name="arrow-redo-outline"></ion-icon></ion-button>
+  <div class="center-title">
+    <h6>Cliquez pour choisir votre destination</h6>
   </div>
 </ion-card>
 </ion-footer>
