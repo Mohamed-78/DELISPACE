@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button class="backbtn" routerLink="/register" routerDirection="back">
+        <img src="../../assets/back.svg" />
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="ion-padding container">
+    <h1><b>Confirmation</b></h1>
+    <span>Un code de 4 chiffres vous à été envoyé par SMS pour confirmer votre numéro</span>
+    <div class="form-container">
+      <ion-item>
+        <ion-label position="floating">Saisissez le code</ion-label>
+        <ion-input type="number" placeholder=""></ion-input>
+      </ion-item>
+      <div class="action-button">
+        <ion-button class="main-button" [routerLink]="['/otp']">Confirmer</ion-button>
+        <ion-button class="main-button" fill="clear">Renvoyer le code</ion-button>
+      </div>
+      <div class="opt-countdown">
+        <span>Le code OTP expire dans 01:59</span>
+      </div>
+    </div>
+  </div>
+</ion-content>

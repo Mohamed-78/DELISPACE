@@ -46,6 +46,7 @@ ion-footer {
     ion-checkbox{
       margin-top: 0.6em;
       margin-left: 0.5em;
+      --background-checked: #ff3008 !important;
     }
   }
 
@@ -72,7 +73,8 @@ ion-footer {
   }
 
   .head-card{
-    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 0px !important;
     border-top-right-radius: 30px 30px !important;
     border-top-left-radius: 30px 30px !important;
@@ -91,8 +93,17 @@ ion-footer {
         width: 42px;
       }
 
+      ion-icon{
+        position: absolute;
+        z-index:1;
+        right: 18px;
+        top: 20px;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
       ::placeholder {
-        color: #fff;
+        color: #000;
         font-size: 14px;
         text-align: center;
       }
@@ -102,8 +113,9 @@ ion-footer {
         border-radius: 13px;
         height: 40px;
         width: 350px;
-        border: 1px solid rgb(255, 250, 250);
-        background: #ff7902;
+        border: 1px solid #f1f0f0;
+        //background: linear-gradient(90deg, #ee990e 0%, #413f3f 50%);
+        background-color: #cdcbcb;
         padding: 1em;
         text-align: center;
       }
@@ -121,6 +133,7 @@ ion-footer {
     h6{
       color: #1c2241;
       font-weight: 550;
+      font-size: 14px;
     }
   }
 

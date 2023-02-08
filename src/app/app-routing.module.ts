@@ -21,6 +21,14 @@ const routes: Routes = [
   {
     path: 'cgu',
     loadChildren: () => import('./cgu/cgu.module').then( m => m.CguPageModule)
+  },
+  {
+    path: 'inscription',
+    loadChildren: () => import('./inscription/inscription.module').then( m => m.InscriptionPageModule)
+  },
+  {
+    path: 'otp',
+    loadChildren: () => import('./otp/otp.module').then( m => m.OtpPageModule)
   }
 ];
 @NgModule({

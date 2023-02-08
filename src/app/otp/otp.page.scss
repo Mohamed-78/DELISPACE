@@ -1,0 +1,90 @@
+*{
+  font-family: Montserrat, sans-serif;
+}
+// This will remove iOS Header Line
+ion-toolbar {
+  --border-width: 0 !important;
+}
+
+// Removing Android Header Line
+.header-md::after {
+  background: none !important;
+}
+
+.container h1 {
+  margin-top: 0;
+  color: #1c2241;
+}
+
+.backbtn {
+  margin-left: 20px;
+}
+
+.form-container {
+  margin-top: 48px;
+}
+
+.form-container ion-item {
+  --padding-start: 0;
+  --border-color: #DADADA;
+}
+
+.form-container ion-item ion-label {
+  color: #A6A6A6;
+}
+
+.form-container ion-item ion-icon {
+  margin-top: auto;
+  color: #c6cbd4;
+}
+
+.form-container ion-button {
+  margin-top: 48px;
+}
+
+.sign-up {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up ion-button {
+  margin: 0;
+  color: #000;
+  font-weight: bold;
+}
+
+.main-button:first-child{
+  --background: #1c2241;
+  height: 2.5em;
+}
+
+.main-button:last-child{
+  height: 2.5em;
+  --color: #1c2241;
+}
+
+
+.action-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span{
+  color: gray;
+  font-size: 13px;
+}
+
+.opt-countdown{
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span{
+    font-weight: bold;
+    color: rgba(6, 179, 101, 0.83);
+  }
+}
