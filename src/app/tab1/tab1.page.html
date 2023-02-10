@@ -1,12 +1,10 @@
 <ion-footer class="ion-no-border">
   <div class="toolbar-top">
     <div class="first-action">
-      <h6>Livraison</h6>
-      <ion-checkbox mode="ios" slot="start"></ion-checkbox>
-    </div>
-    <div class="second-action">
-      <h6>Démenagement</h6>
-      <ion-checkbox mode="ios" slot="end" (click)="toggle()"></ion-checkbox>
+        <div *ngFor="let menu of list; let i = index">
+          <h6>{{menu.name}}</h6>
+          <ion-checkbox mode="ios" slot="start" [disabled]="list[i].value" (click)="selection(menu.name);"></ion-checkbox>
+        </div>
     </div>
   </div>
   <ion-grid>

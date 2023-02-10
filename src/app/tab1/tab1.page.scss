@@ -41,11 +41,14 @@ ion-footer {
     margin-top: -0.6em;
     padding: 1em;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
 
     ion-checkbox{
       margin-top: 0.6em;
-      margin-left: 0.5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
       --background-checked: #ff3008 !important;
     }
   }

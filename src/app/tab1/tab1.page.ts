@@ -9,6 +9,17 @@ import { MapComponent } from '../map/map.component';
 })
 export class Tab1Page {
 
+  list = [
+    {
+      name: "Livraison",
+      value: false
+    },
+    {
+      name: "Démenagement",
+      value: false
+    }
+  ]
+
   public toggled: boolean = false;
   constructor(public modalCtrl: ModalController) {}
 
@@ -22,6 +33,17 @@ export class Tab1Page {
 
   public toggle(): void {
     this.toggled = !this.toggled;
+  }
+
+  selection(name: string) {
+    this.list.forEach(x => {
+      if (x.name !== name) {
+        x.value = !x.value
+      }
+      else if(x.name !== 'Livraison'){
+        this.toggle();
+      }
+    });
   }
 
 }
